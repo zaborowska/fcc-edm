@@ -962,11 +962,40 @@
               <field name="m_container" transient="true"/>
             </class>
           <class name="std::vector<fcc::CaloHitAssociationObj>" />
+          <class name="fcc::CaloHitAssociationObj">
+            <field name="m_registry" transient="true"/>
+            <field name="m_container" transient="true"/>
+          </class>
+          <class name="std::vector<fcc::CaloClusterHitAssociationData>" />
 
-            <class name="fcc::CaloHitAssociationObj">
-              <field name="m_registry" transient="true"/>
-              <field name="m_container" transient="true"/>
-            </class>
+          <class name="fcc::CaloClusterHitAssociationData">
+            <field name="m_registry" transient="true"/>
+            <field name="m_container" transient="true"/>
+          </class>
+          <class name="std::vector<fcc::CaloClusterHitAssociation>" />
+
+          <class name="fcc::CaloClusterHitAssociation">
+            <field name="m_registry" transient="true"/>
+            <field name="m_container" transient="true"/>
+          </class>
+          <class name="std::vector<fcc::ConstCaloClusterHitAssociation>" />
+
+          <class name="fcc::ConstCaloClusterHitAssociation">
+            <field name="m_registry" transient="true"/>
+            <field name="m_container" transient="true"/>
+          </class>
+          <class name="std::vector<fcc::CaloClusterHitAssociationCollection>" />
+
+          <class name="fcc::CaloClusterHitAssociationCollection">
+            <field name="m_registry" transient="true"/>
+            <field name="m_container" transient="true"/>
+          </class>
+          <class name="std::vector<fcc::CaloClusterHitAssociationObj>" />
+
+          <class name="fcc::CaloClusterHitAssociationObj">
+            <field name="m_registry" transient="true"/>
+            <field name="m_container" transient="true"/>
+          </class>
           <class name="std::vector<fcc::GenJetTagAssociationData>" />
 
             <class name="fcc::GenJetTagAssociationData">

@@ -150,7 +150,7 @@ datatypes :
     OneToOneRelations :
      - fcc::GenJet Jet // Reference to the gen jet
      - fcc::MCParticle Particle // Reference to the mc particle
-  
+
   fcc::GenJetTagAssociation :
     Description : "Association between a GenJet and Tag information using a preferred algorithm"
     Author : "C. Bernet, Z. Drasal"
@@ -231,6 +231,13 @@ datatypes :
     OneToOneRelations:
      - fcc::SimCaloCluster Cluster // The cluster
      - fcc::SimCaloHit Hit // the hit
+
+  fcc::CaloClusterHitAssociation:
+    Description: "Association between a calo cluster and a hit. Used to keep track of the hits used to build a given cluster"
+    Author : "C. Bernet, B. Hegner"
+    OneToOneRelations:
+     - fcc::CaloCluster Cluster // The cluster
+     - fcc::CaloHit Hit // the hit
 
   fcc::TrackClusterHitsAssociation:
     Description : "Association between a track cluster and a track hit"
